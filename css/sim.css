@@ -5,20 +5,20 @@
   width: 100%;
 }
 #sim-window #path {
-  background: url("/images/grass.jpg");
+  background: url("../images/grass.jpg");
 }
 #sim-window .road {
-  background: url("/images/road.png");
+  background: url("../images/road.png");
   height: 600px;
   width: 750px;
 }
 #sim-window .cross-road {
-  background: url("/images/crossroad.png");
+  background: url("../images/crossroad.png");
   height: 600px;
   width: 750px;
 }
 #sim-window .car {
-  background: url("/images/car.png");
+  background: url("../images/car.png");
   position: absolute;
   height: 216px;
   width: 100px;
@@ -29,13 +29,13 @@
   width: 100%;
 }
 #sim-window .car .car-alarm {
-  background: url("/images/car-alarm.png");
+  background: url("../images/car-alarm.png");
   position: absolute;
   height: 216px;
   width: 100px;
 }
 #sim-window .car .car-light {
-  background: url("/images/car-ligts.png");
+  background: url("../images/car-ligts.png");
   position: absolute;
   height: 216px;
   width: 100px;
