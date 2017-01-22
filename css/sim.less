@@ -1,0 +1,50 @@
+#sim-window{
+  background: #000;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+
+  #path{
+
+    background: url("/images/grass.jpg");
+  }
+
+  .road{
+    background: url("/images/road.png");
+    height: 600px;
+    width: 750px;
+  }
+
+  .cross-road{
+    background: url("/images/crossroad.png");
+    height: 600px;
+    width: 750px;
+  }
+
+  .car{
+    background: url("/images/car.png");
+    position: absolute;
+    height: 216px;
+    width: 100px;
+
+    .ins-wrap{
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
+    .car-alarm{
+      background: url("/images/car-alarm.png");
+      position: absolute;
+      height: 216px;
+      width: 100px;
+    }
+
+    .car-light{
+      background: url("/images/car-ligts.png");
+      position: absolute;
+      height: 216px;
+      width: 100px;
+    }
+  }
+}
