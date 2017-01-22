@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибки в автотренажере</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sim.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="js/vendor/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.js"></script>
+    <script type="text/javascript" data-main="js/main.js" src="js/vendor/require.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="sim-window">
+                    <div id="your-car" class="car" style="bottom: 100px; left: 510px;">
+                        <div class="ins-wrap">
+                            <div class="car-alarm"></div>
+                            <div class="car-light" style="display: none"></div>
+                        </div>
+                    </div>
+                    <div id="path">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Состояние автообиля</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul id="car-state">
+                            <li id="car-state-engine">Двигатель: выкл</li>
+                            <li id="car-state-speed">Скорость: 0 км/ч</li>
+                            <!--<li id="car-state-transmission">Передача: N</li>-->
+                            <li id="car-state-break">Ручник: вкл</li>
+                            <li id="car-state-lights">Габариты: выкл</li>
+                            <li id="car-state-alarm">Аварийная сигнализация: вкл</li>
+                            <li id="car-state-belt">Ремень водителя: не пристегнут</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Состояние окружения</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Ограничение скорости: 40 км/ч</li>
+                            <li>Запрещена остановка</li>
+                            <li>Светофор: нет</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Помощь</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Управление: <kbd>WASD</kbd></li>
+                            <li>Двигатель: <kbd>B</kbd></li>
+                            <li>Передача: <kbd>Z</kbd></li>
+                            <li>Ручник: <kbd>X</kbd></li>
+                            <li>Габариты: <kbd>L</kbd></li>
+                            <li>Аварийная сигналиация: <kbd>K</kbd></li>
+                            <li>Ремень водителя: <kbd>C</kbd></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="error-wrapper">
+                    <p>Штрафные баллы: <strong class="points-count">0</strong></p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <span class="sr-only">0</span>
+                        </div>
+                    </div>
+                    <button id="error-random-button" type="button" class="btn btn-warning">Добавить случайное нарушение</button>
+
+                    <h4>Штрафы:</h4>
+                    <ul id="error-list">
+                        <li>Нет</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
